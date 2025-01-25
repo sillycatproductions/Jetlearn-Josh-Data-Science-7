@@ -1,0 +1,19 @@
+Steps in a Machine Learning Project (AI):
+    1 - Gathering data to load into program
+    2 - Editing the data to the AI's needs
+    3 - Analysing the data to define the input and output columns to delete the rest
+    4 - Creating seperate dataframes for inputs and outputs
+    5 - Splitting up the data into testing and training data
+    6 - Selecting the machine learning algorithm and perforn the training of the model
+    7 - Performing predictions and comparing them with actual results to calculate accuracy
+
+Types of Machine Learning (AI): 
+    1 - Supervised Learning:
+       Training the model under supervison. It has labelled data. Face of the person in openCV course.
+
+    2 - Unsupervised Learning:
+       No labelled data. System will learn with the pattern / similarities and try to group it.
+
+    3 - Reinforcement Learning:
+        Making mistakes and learning. Hit ad trial method.
+
