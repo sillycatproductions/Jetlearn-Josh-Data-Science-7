@@ -31,3 +31,24 @@ le = LabelEncoder()
 y = le.fit_transform(y)
 print('Label Encoder :\n ', y)
 print()
+
+#Feature Scaling -age and salary(trying to scale down as sys will get affected with huge variation in the values)
+#StandardScaler = (x_mean)/stdev (values will range from -1 to 1 mean to be 0)
+from sklearn.model_selection import train_test_split
+x_train,x_test,y_train,y_test = train_test_split(x,y, test_size= 0.2, random_state = 1)
+print('X_Train : \n',x_train)
+print('X_Test : \n',x_test)
+print()
+
+print('Y_Train : \n',y_train)
+print('Y_Test : \n',y_test)
+print()
+
+from sklearn.preprocessing import StandardScaler
+sc = StandardScaler()
+x_train.iloc[:, 1:3] = sc.fit_transform(x_train.iloc[:, 1:3])
+x_test.iloc[:, 1:3] = sc.transform(x_test.iloc[:, 1:3])
+
+print('After scaling the values from -1 to 1 : \n')
+print(x_train)
+print(x_test)
